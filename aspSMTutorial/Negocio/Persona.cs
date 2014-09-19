@@ -90,7 +90,7 @@ namespace Negocio
             DataTable dt = new DataTable();
 
             string[] parametros = { "@operacion", "@cedula" };
-            dt = datos.getDatos("spPersonaSE", parametros, "S", 0);
+            dt = datos.getDatos("spPersonaSE", parametros, "S", persona.cedula);
 
             foreach (DataRow row in dt.Rows)
             {
