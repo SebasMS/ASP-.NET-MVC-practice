@@ -1,0 +1,7 @@
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Negocio\bin\Debug\Negocio.dll
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Negocio\obj\Debug\Negocio.dll
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Negocio\bin\Debug\Datos.dll
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Negocio\bin\Debug\Datos.pdb

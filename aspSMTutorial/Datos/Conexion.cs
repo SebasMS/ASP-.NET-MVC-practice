@@ -9,22 +9,24 @@ namespace Datos
 {
     public class Conexion
     {
-        public SqlConnection con { get; set; }
+        public SqlConnection con { get; set; }              
+
+        #region Conectar
 
         // retorno cadenaconexión
         public string cadenaConexion()
         {
-            return @"data source=.;initial=dbSMTutorial;user id=sebasMS;password=mejias123";
+            //return @"Data Source=.; Initial Catalog=dbSMTutorial;user id=sebasMS;password=mejias123";
+            return @"Data Source=localhost; Initial Catalog=dbSMTutorial; Integrated Security=true";
         }
-
-        #region Conectar
+        
         public SqlConnection conectar()
         {
-            con = new SqlConnection(cadenaConexion());
+            this.con = new SqlConnection(cadenaConexion());
 
             try
             {
-                con.Open();
+                this.con.Open();
                 return this.con;
             }
             catch (Exception)

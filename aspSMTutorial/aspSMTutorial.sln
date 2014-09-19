@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspSMTutorial", "aspSMTutorial\aspSMTutorial.csproj", "{23212DC0-9859-4DBD-8F78-69552B77AD45}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "aspSMTutorial\Presentacion.csproj", "{23212DC0-9859-4DBD-8F78-69552B77AD45}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{F4825860-0270-4588-8AA4-5997BE079556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{2EF151F5-4600-4A14-AEE3-E299B1FA406D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F4825860-0270-4588-8AA4-5997BE079556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4825860-0270-4588-8AA4-5997BE079556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4825860-0270-4588-8AA4-5997BE079556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF151F5-4600-4A14-AEE3-E299B1FA406D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF151F5-4600-4A14-AEE3-E299B1FA406D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF151F5-4600-4A14-AEE3-E299B1FA406D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF151F5-4600-4A14-AEE3-E299B1FA406D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

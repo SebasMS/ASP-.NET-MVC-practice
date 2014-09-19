@@ -1,0 +1,5 @@
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Datos\bin\Debug\Datos.dll
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Datos\bin\Debug\Datos.pdb
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Datos\obj\Debug\Datos.dll
+C:\Users\Sebastián\Desktop\ASP-.NET-MVC-practice\aspSMTutorial\Datos\obj\Debug\Datos.pdb

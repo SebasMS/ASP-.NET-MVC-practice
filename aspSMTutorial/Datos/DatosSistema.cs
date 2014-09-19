@@ -18,7 +18,7 @@ namespace Datos
          *  2.Parámetros del procedimiento.
          *  3. Valores de los parametros */
 
-        public DataTable getDatos(string procedimiento, string[] parametros, params Object[] valparametro)
+        public DataTable getDatos(string procedimiento, string[] parametros, params Object[] valParametro)
         {
             // Instanciamos la conexión
             Conexion con = new Conexion();
@@ -39,16 +39,16 @@ namespace Datos
             cmd.CommandType = CommandType.StoredProcedure;
 
             // Se valida que los valores esten y sean correctos
-            if (procedimiento.Length != 0 && parametros.Length == valparametro.Length)
+            if (procedimiento.Length != 0 && parametros.Length == valParametro.Length)
             {
                 // Creamos una variable para recorrer los valores ingresados
-                int i = 0;
+                int index = 0;
 
                 // Recorre los parametros
                 foreach (string parametro in parametros)
                 {
                     // Ejecuta los valores que ingresaron 
-                    cmd.Parameters.AddWithValue(parametro, valparametro[i++]);
+                    cmd.Parameters.AddWithValue(parametro, valParametro[index++]);
                 }
                                 
                 try
@@ -67,7 +67,7 @@ namespace Datos
                 }
                 catch (Exception)
                 {
-
+                    return null;
                 }
             }
             // Retorno del DataTable
@@ -78,7 +78,7 @@ namespace Datos
         /* Método para ejecutar procedimiento almacenado en la base de datos. 
          * Funciona igual que el anterior, a diferencia de que no utilizamos DataTable*/
 
-        public int Ejecutar(string procedimiento, string[] parametros, params Object[] valparametros)
+        public int? Ejecutar(string procedimiento, string[] parametros, params Object[] valParametros)
         {
             Conexion con = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -86,12 +86,12 @@ namespace Datos
             cmd.CommandText = procedimiento;
             cmd.CommandType = CommandType.StoredProcedure;
             
-            if (procedimiento.Length != 0 && parametros.Length == valparametros.Length)
+            if (procedimiento.Length != 0 && parametros.Length == valParametros.Length)
             {
-                int i = 0;
+                int index = 0;
                 foreach (string parametro in parametros)
                 {
-                    cmd.Parameters.AddWithValue(parametro, valparametros[i++]);
+                    cmd.Parameters.AddWithValue(parametro, valParametros[index++]);
                 }
                     
                 try
@@ -101,7 +101,7 @@ namespace Datos
                 }
                 catch (Exception)
                 {
-
+                    return null;
                 }
             }
             //Si no, retornamos cero
